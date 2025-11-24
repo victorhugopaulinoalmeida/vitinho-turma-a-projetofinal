@@ -4,9 +4,8 @@ export default function Page() {
   return (
     <View style={styles.container}>
       <View style={styles.main}>
-        <Text style={styles.title}>pagina inicial</Text>
-        <Text style={styles.subtitle}>bem vindo ao aplicativo</Text>
-      </View>
+        <Text style={styles.title}>sobre mim</Text>
+        <Text style={styles.subtitle}>Detalhes estudantis</Text> </View>
     </View>
   );
 }
