@@ -1,6 +1,7 @@
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { Tabs } from 'expo-router';
 import Ionicons from '@expo/vector-icons/Ionicons';
+import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 
 
 
@@ -21,6 +22,15 @@ export default function TabLayout() {
         options={{
           title: 'Blues',
           tabBarIcon: ({ color }) => <Ionicons name="musical-notes-sharp" size={24} color={color} />,
+           headerShown: false,
+        }}
+      />
+
+      <Tabs.Screen
+        name="boates"
+        options={{
+          title: 'Boates',
+          tabBarIcon: ({ color }) => <MaterialCommunityIcons name="shoe-heel" size={24} color={color} />,
            headerShown: false,
         }}
       />
