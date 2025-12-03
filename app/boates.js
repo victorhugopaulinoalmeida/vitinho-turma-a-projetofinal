@@ -8,6 +8,7 @@ import {
   Platform,
   Image,
 } from "react-native";
+import baile1 from "../assets/baile1.jpg";   
 
 export default function Dance60sPage() {
   const fade = useRef(new Animated.Value(0)).current;
@@ -81,7 +82,7 @@ export default function Dance60sPage() {
           {/* Espaço para foto no final */}
           <View style={styles.photoContainer}>
             <Image
-              source={{ uri: "https://example.com/foto-bailes-60s.jpg" }} // substituir pela URL da sua foto
+              source={baile1} // substituir pela URL da sua foto
               style={styles.photo}
               resizeMode="cover"
             />

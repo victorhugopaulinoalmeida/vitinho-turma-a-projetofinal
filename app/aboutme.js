@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View, Animated, Image, ScrollView } from "react-native";
 import { useEffect, useRef } from "react";
-import foto  from "../assets/foto.jpeg";
+import fotos  from "../assets/fotos.jpg";
 
 export default function AboutMe() {
   const fade = useRef(new Animated.Value(0)).current;
@@ -37,7 +37,7 @@ export default function AboutMe() {
         >
           {/* Foto quadrada */}
           <Image
-            source={foto}
+            source={fotos}
             style={styles.avatar}
           />
 

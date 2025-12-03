@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import {
   StyleSheet,
   Text,
@@ -8,7 +8,7 @@ import {
   Platform,
   Image,
 } from "react-native";
-import blues1 from "../assets/blues1.jpg";
+import blues1 from "../assets/blues.png";
 
 export default function HistoryPage() {
   const fade = useRef(new Animated.Value(0)).current;
@@ -22,6 +22,7 @@ export default function HistoryPage() {
         useNativeDriver: true,
       }),
       Animated.timing(slide, {
+
         toValue: 0,
         duration: 900,
         useNativeDriver: true,
@@ -53,10 +54,10 @@ export default function HistoryPage() {
 
           <Text style={styles.sectionTitle}>Origens e raízes africanas</Text>
           <Text style={styles.paragraph}>
-            O Blues nasce das tradições musicais africanas trazidas pelos povos escravizados para as Américas. 
-            Elementos como o <Text style={styles.em}>call-and-response</Text>, ritmos polirrítmicos e escalas microtonais 
-            sobrevivem e se transformam ao longo dos séculos. Nos Estados Unidos, essas raízes se misturam a hinos, 
-            cantos religiosos (spirituals), canções de trabalho e lamentos do cotidiano, gerando a base emocional do 
+            O Blues nasce das tradições musicais africanas trazidas pelos povos escravizados para as Américas.
+            Elementos como o <Text style={styles.em}>call-and-response</Text>, ritmos polirrítmicos e escalas microtonais
+            sobrevivem e se transformam ao longo dos séculos. Nos Estados Unidos, essas raízes se misturam a hinos,
+            cantos religiosos (spirituals), canções de trabalho e lamentos do cotidiano, gerando a base emocional do
             que viria a ser o Blues. Essa fusão gerou uma música visceral e profunda, refletindo as dificuldades da vida
             de trabalhadores afro-americanos.
           </Text>
@@ -73,7 +74,7 @@ export default function HistoryPage() {
 
           <Text style={styles.sectionTitle}>Recursos para aprofundar</Text>
           <Text style={styles.paragraph}>
-            Para quem quiser estudar mais: busque gravações originais de Robert Johnson, Muddy Waters, B.B. King e Son House; 
+            Para quem quiser estudar mais: busque gravações originais de Robert Johnson, Muddy Waters, B.B. King e Son House;
             leia sobre W. C. Handy e a Grande Migração; e explore documentários e livros que contextualizam o Blues dentro da
             história social dos EUA.
           </Text>
@@ -84,7 +85,7 @@ export default function HistoryPage() {
               style={styles.photo}
             />
           </View>
-
+        
           <View style={{ height: 24 }} />
         </ScrollView>
       </Animated.View>
